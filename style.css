@@ -1,0 +1,256 @@
+/*p{
+	justify-content: right;
+}*/
+/*nav*/
+nav{
+	width: 100%;
+	height: 18vh;
+	background: #fff;
+	font: bold 20px Helvetica, Arial, sans-serif;
+}
+nav ul{
+    	justify-content: center;
+    	margin-right: 10%;
+    	margin-left: 8%;
+}
+nav img{
+	margin-left: 20px;
+    	width: 100%;
+    	height: 9vh;
+}
+/*banner*/
+#banner{
+	width: 100%;	
+	background: url("image/banner_img.jpeg");	
+	height: 90vh;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}
+#banner:after{
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+	z-index: -1;
+}
+#banner h2{
+	padding-top: 10%;
+	font-size: 80px;
+	color: darkcyan;
+}
+/*button*/
+#banner button{
+	width: 30vh;
+	height: 10vh;
+}
+.btn{
+	margin: 50px 40px 75px 150px;
+	cursor: pointer;
+	position: relative;
+	/*top&bottom left&right*/
+	padding: 10px 20px;
+	background: white;
+	font-size: 20px; 
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;       
+}
+.btn:hover{
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+/*angle border*/
+.btn:after, .btn:before{
+	content: " " ;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	transition: all 1s;
+}
+
+.btn:after{
+	border-top: 5px solid darkcyan;
+	border-right: 5px solid black;
+	top: 1px;
+	right: 1px;
+
+}
+.btn:before{
+	border-bottom: 5px solid black;
+	border-left: 5px solid darkcyan;
+	bottom: 1px;
+	left: 1px;
+}
+.btn:hover:before, .btn:hover:after{
+	width: 100%;
+	height: 100%;
+}
+/*sevice */
+#service{
+	display: flex;
+}
+#service a{
+	text-align: center;
+}
+#tab{
+	height: auto;
+}
+#text{
+	width: 65%;
+	height: auto;
+}
+
+/*slider*/
+header {
+   max-width: 3000px;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   overflow: hidden;
+  }
+
+.row {
+   display: flex;
+   overflow: hidden;
+}
+
+.imagegroup {
+   display: flex;
+   width: 60%;
+   height: 60vh;
+}
+
+.imagegroup img{
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.imagegroup {
+   animation: slides 15s ease-in infinite;
+  }
+
+@keyframes slides {
+   0%, 50% {
+      transform: translate3d(-100,0,0);
+    }
+   100% {
+      transform: translate3d(-400%,0,0);
+    }
+}
+/*about us*/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  margin-left: 50px;
+}
+#about-me{
+	font: 20px Helvetica, Arial, sans-serif;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: darkcyan;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+
+/*footer*/
+
+#footer{
+	background-color: whitesmoke;
+	height: 20vh;
+	margin-top: 100px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.social-media {
+    display: flex;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.social-media i {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    line-height: 50px;
+    font-size: 28px;
+    text-align: center;
+    z-index: 10;
+    color: #152733;
+    transition: all .5s;
+}
+
+.social-media i:hover {
+    color: #c6934b;
+}
+
+.social-media i::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #152733;
+    transform: rotate(45deg);
+    top: -1px;
+    left: -2px;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 50px 10px rgba(24, 42, 54, 0);
+    z-index: -1
+}
+
+.social-media i:hover::after {
+    box-shadow: 0 0 0 0px #152733;
+    background-color: rgba(21, 39, 51, 0.8);
+}
+
+.social-media .media-icon:nth-child(2) i {
+    padding-left: 2px;
+}
+button{
+	height: 6vh;
+	width: 30vh;
+}
